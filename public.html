@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="conatiner">
+    <div class="calculator">
+      <div class="out_conatiner">
+        <input type="text" disabled  class="bottom_end" id="output"></input>
+        <hr/>
+        <input type="text" disabled class="bottom_end" id="input" ></input>
+      </div>
+      <div class="input_conatiner">
+        <div class="single_conatiner">
+          <button class="btn" id="numberC" value="C" onclick="clearAll()">C</button>
+          <button class="btn" id="numberAC" value="AC" onclick="clearSianle()">AC</button>
+        </div>
+        <div class="single_conatiner">
+          <button class="btn" id="number7" value="7" onclick="display('7')">7</button>
+          <button class="btn" id="number8" value="8" onclick="display('8')">8</button>
+          <button class="btn" id="number9" value="9" onclick="display('9')">9</button>
+          <button class="btn" id="mul" value="*" onclick="display('*')">*</button>
+       
+        </div>
+        <div class="single_conatiner">
+          <button class="btn" id="number4" value="4" onclick="display('4')">4</button>
+          <button class="btn" id="number5" value="5" onclick="display('5')">5</button>
+          <button class="btn" id="number6" value="6" onclick="display('6')">6</button>
+          <button class="btn" id="div" value="/" onclick="display('/')">/</button>
+          
+        </div>
+        <div class="single_conatiner">
+          <button class="btn" id="number1" value="1" onclick="display('1')">1</button>
+          <button class="btn" id="number2" value="2" onclick="display('2')">2</button>
+          <button class="btn" id="number3" value="3" onclick="display('3')">3</button>
+          <button class="btn" id="add"  value="+" onclick="display('+')">+</button>
+        
+        </div>
+        <div class="single_conatiner">
+          <button class="btn"s id="number0" value="0" onclick="display('0')">0</button>
+          <button class="btn" id="dot" value="." onclick="display('.')">.</button>
+          <button class="btn" id="sub" value="-" onclick="display('-')">-</button>
+          <button class="button" id="euqal" value="=" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
